@@ -1,16 +1,20 @@
 //
-//  NDModifyOperatorObjCTests.m
-//  NDModifyOperatorTests
+//  NDModificationOperatorsTests.m
+//  NDModificationOperatorsTests
 //
-//  Created by Nguyen Duc Hiep on 5/20/20.
+//  Created by Nguyen Duc Hiep on 6/25/20.
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import "NDModifyOperatorObjCTests.h"
+#import <XCTest/XCTest.h>
 
-#import <NDModifyOperator/NDModifyOperator.h>
+#import <NDModificationOperators/NDModificationOperators.h>
 
-@implementation NDModifyOperatorObjCTests
+@interface NDModificationOperatorsTests : XCTestCase
+
+@end
+
+@implementation NDModificationOperatorsTests
 
 - (void)testModify {
   auto str = [[NSMutableString alloc] initWithString:@"a"];

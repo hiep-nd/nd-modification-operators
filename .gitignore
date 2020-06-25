@@ -1,4 +1,4 @@
 *~
 .DS_Store
-NDModifyOperator.xcodeproj/project.xcworkspace/xcuserdata/**
-NDModifyOperator.xcodeproj/xcuserdata/**
+**/xcuserdata/**
+Pods/**
