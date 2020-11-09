@@ -1,20 +1,26 @@
-Pod::Spec.new do |spec|
-spec.name         = "NDModificationOperators"
-  spec.version      = "0.0.2"
-  spec.summary      = "Added modification methods for object."
-  spec.description  = <<-DESC
+Pod::Spec.new do |s|
+  s.name         = "NDModificationOperators"
+  s.version      = "0.0.3"
+  s.summary      = "Added modification methods for object."
+  s.description  = <<-DESC
   NDModificationOperators is a small framework that add modification operators and methods.
                    DESC
-  spec.homepage     = "https://github.com/hiep-nd/nd-modification-operators"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author             = { "Nguyen Duc Hiep" => "hiep.nd@gmail.com" }
-  spec.ios.deployment_target = '9.0'
-  spec.osx.deployment_target = '10.9'
-  spec.tvos.deployment_target = '9.0'
-  spec.watchos.deployment_target = '2.0'
-  spec.swift_versions = ['4.0', '5.1', '5.2']
-  #spec.source        = { :http => 'file:' + __dir__ + "/" }
-  spec.source       = { :git => "https://github.com/hiep-nd/nd-modification-operators.git", :tag => "Pod-#{spec.version}" }
-  spec.source_files  = "NDModificationOperators/**/*.{h,m,mm,swift}"
-  spec.public_header_files = "NDModificationOperators/**/*.h"
+  s.homepage     = "https://github.com/hiep-nd/nd-modification-operators"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.author             = { "Nguyen Duc Hiep" => "hiep.nd@gmail.com" }
+  s.ios.deployment_target = '9.0'
+  s.osx.deployment_target = '10.9'
+  s.tvos.deployment_target = '9.0'
+  s.watchos.deployment_target = '2.0'
+  s.swift_versions = ['4.0', '5.1', '5.2']
+  #s.source        = { :http => 'file:' + __dir__ + "/" }
+  s.source       = { :git => "https://github.com/hiep-nd/nd-modification-operators.git", :tag => "Pod-#{s.version}" }
+
+  s.subspec 'ObjC' do |ss|
+    ss.source_files = "Sources/ObjC/*.{h,m,mm,swift}"
+  end
+
+  s.subspec 'Swift' do |ss|
+    ss.source_files = "Sources/Swift/*.{h,m,mm,swift}"
+  end
 end

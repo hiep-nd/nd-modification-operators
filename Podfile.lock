@@ -1,0 +1,18 @@
+PODS:
+  - NDModificationOperators/ObjC (0.0.3)
+  - NDModificationOperators/Swift (0.0.3)
+
+DEPENDENCIES:
+  - NDModificationOperators/ObjC (from `.`)
+  - NDModificationOperators/Swift (from `.`)
+
+EXTERNAL SOURCES:
+  NDModificationOperators:
+    :path: "."
+
+SPEC CHECKSUMS:
+  NDModificationOperators: 30b847443c7438155b41f06b0b9cc0ad7271403f
+
+PODFILE CHECKSUM: 3b1d99fe92583490c654fb3765d3c4c363565e9f
+
+COCOAPODS: 1.9.3
