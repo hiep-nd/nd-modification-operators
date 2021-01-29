@@ -1,6 +1,6 @@
 PODS:
-  - NDModificationOperators/ObjC (0.0.3)
-  - NDModificationOperators/Swift (0.0.3)
+  - NDModificationOperators/ObjC (1.0)
+  - NDModificationOperators/Swift (1.0)
 
 DEPENDENCIES:
   - NDModificationOperators/ObjC (from `.`)
@@ -11,8 +11,8 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  NDModificationOperators: 2714d70449148bca92cae538c7dc55b12a13b854
+  NDModificationOperators: 6599c843fc9d945ac03eb01689f635144e95905c
 
 PODFILE CHECKSUM: b0c8c7bce882f116896296caf22cd90059516916
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

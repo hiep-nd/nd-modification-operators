@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NDModificationOperators"
-  s.version      = "0.0.3.1"
+  s.version      = "1.0"
   s.summary      = "Added modification methods for object."
   s.description  = <<-DESC
   NDModificationOperators is a small framework that add modification operators and methods.
@@ -20,9 +20,9 @@ Pod::Spec.new do |s|
     ss.source_files = "Sources/ObjC/*.{h,m,mm,swift}"
   end
 
-  s.default_subspec = 'Swift'
-
   s.subspec 'Swift' do |ss|
     ss.source_files = "Sources/Swift/*.{h,m,mm,swift}"
   end
+
+  s.default_subspec = 'Swift'
 end
